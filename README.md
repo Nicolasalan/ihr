@@ -16,36 +16,36 @@ Tarefas domésticas repetitivas, como lavar louça, arrumar a cama e varrer o ch
 
 ### Público Alvo
 
-Perfil de usuário: Indivíduos entre 20 e 35 anos, com renda média, conhecimento em tecnologia, que vivem sozinhos ou com no maximo um companheiro.
+**Perfil de usuário**: Indivíduos entre 20 e 35 anos, com renda média, conhecimento em tecnologia, que vivem sozinhos ou com no maximo um companheiro.
 
 ### Personas
 
-Persona primária: João, 28 anos, engenheiro de software, mora sozinho em um apartamento. Valoriza a praticidade e busca otimizar seu tempo livre para hobbies ou trabalho.
+- **Persona primária**: João, 28 anos, engenheiro de software, mora sozinho em um apartamento. Valoriza a praticidade e busca otimizar seu tempo livre para hobbies ou trabalho.
 Informações que o robô deve saber: Horários disponíveis de João, localização da pia, cama e áreas a varrer, além de suas preferências (ex.: como arrumar a cama).
 
-Persona secundária: Maria, 25 anos, designer, visita amigos que possuem o **Dinamo**. Curiosa sobre tecnologia, mas sem experiência prévia com robôs.
+- **Persona secundária**: Maria, 25 anos, designer, visita amigos que possuem o **Dinamo**. Curiosa sobre tecnologia, mas sem experiência prévia com robôs.
 Informações que o robô deve saber: Nenhuma informação prévia, já que Maria não é a dona do robô; ele deve operar normalmente na presença dela.
 
 ### Mapa de Empatia
 
 #### Persona primária (João):
 
-**O que vê**: Um apartamento organizado, soluções tecnológicas minimalistas e modernas.
-**O que ouve**: Recomendações de amigos sobre gadgets e tecnologias úteis.
-**O que diz e faz**: Busca dispositivos que economizem tempo e compartilha suas experiências em redes sociais.
-**O que pensa e sente**: Valoriza praticidade e eficiência; sente satisfação com tecnologias que se adaptam a ele.
-**Dores**: Frustração com dispositivos complexos ou que não atendem suas expectativas.
-**Ganhos**: Tempo livre, qualidade de vida e surpresa ao ver o robô aprender suas preferências.
+- **O que vê**: Um apartamento organizado, soluções tecnológicas minimalistas e modernas.
+- **O que ouve**: Recomendações de amigos sobre gadgets e tecnologias úteis.
+- **O que diz e faz**: Busca dispositivos que economizem tempo e compartilha suas experiências em redes sociais.
+- **O que pensa e sente**: Valoriza praticidade e eficiência; sente satisfação com tecnologias que se adaptam a ele.
+- **Dores**: Frustração com dispositivos complexos ou que não atendem suas expectativas.
+- **Ganhos**: Tempo livre, qualidade de vida e surpresa ao ver o robô aprender suas preferências.
 
 
 #### Persona secundária (Maria):
 
-**O que vê**: O **Dinamo** funcionando na casa de amigos, ambientes limpos e organizados.
-**O que ouve**: Comentários positivos dos amigos sobre o robô.
-**O que diz e faz**: Expressa curiosidade e observa o robô em ação.
-**O que pensa e sente**: Interesse em tecnologia, mas receio de não entender seu funcionamento.
-**Dores**: Insegurança por falta de familiaridade com robôs.
-**Ganhos**: Fascínio ao ver o robô operar autonomamente.
+- **O que vê**: O **Dinamo** funcionando na casa de amigos, ambientes limpos e organizados.
+- **O que ouve**: Comentários positivos dos amigos sobre o robô.
+- **O que diz e faz**: Expressa curiosidade e observa o robô em ação.
+- **O que pensa e sente**: Interesse em tecnologia, mas receio de não entender seu funcionamento.
+- **Dores**: Insegurança por falta de familiaridade com robôs.
+- **Ganhos**: Fascínio ao ver o robô operar autonomamente.
 
 
 ### Contexto de Uso
@@ -71,25 +71,25 @@ O **Dinamo** opera em residências de um único andar, como apartamentos ou casa
 
 ### Análise de Concorrência
 
-**Tesla – Optimus**:
-Similaridade: Robô para tarefas repetitivas com aprendizado por imitação.
-Pontos positivos: Versatilidade em ambientes industriais e domésticos.
-Pontos negativos: Preço elevado (US$20.000–30.000) e complexidade excessiva para tarefas simples.
+- **Tesla – Optimus**:
+  - **Similaridade**: Robô para tarefas repetitivas com aprendizado por imitação.
+  - **Pontos positivos**: Versatilidade em ambientes industriais e domésticos.
+  - **Pontos negativos**: Preço elevado (US$20.000–30.000) e complexidade excessiva para tarefas simples.
 
 
-**Figure**:
-**Similaridade**: Robô humanoide para uso doméstico e industrial.
-**Pontos positivos**: IA avançada (Helix) e parcerias como com a BMW.
-**Pontos negativos**: Foco maior em indústria, menos acessível para residências.
+- **Figure**:
+  - **Similaridade**: Robô humanoide para uso doméstico e industrial.
+  - **Pontos positivos**: IA avançada (Helix) e parcerias como com a BMW.
+  - **Pontos negativos**: Foco maior em indústria, menos acessível para residências.
 
 
-**Hello Robot – Stretch**:
-**Similaridade**: Robô compacto para tarefas domésticas.
-**Pontos positivos**: Design acessível, open source, custo razoável (US$24.950).
-**Pontos negativos**: Menor autonomia e funcionalidades limitadas.
+- **Hello Robot – Stretch**:
+  - **Similaridade**: Robô compacto para tarefas domésticas.
+  - **Pontos positivos**: Design acessível, open source, custo razoável (US$24.950).
+  - **Pontos negativos**: Menor autonomia e funcionalidades limitadas.
 
 
-**Preferência da equipe**: Stretch, por seu foco em acessibilidade e simplicidade, alinhado ao público do **Dinamo**.
+- **Preferência da equipe**: Stretch, por seu foco em acessibilidade e simplicidade, alinhado ao público do **Dinamo**.
 
 ### Design
 
@@ -120,7 +120,6 @@ O **Dinamo** é construído com materiais plásticos de baixa rigidez, garantind
 
 ### Interações do Robô
 **Espacial**
-
 **Movimentação**:
 - Descrição: Desloca-se pelo ambiente, evitando obstáculos.
 - Pré-requisitos: Espaço livre e mapeamento prévio.
