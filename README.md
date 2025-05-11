@@ -1,118 +1,140 @@
-# **Nome do Robô:** Aplicação do robô
+## **Dinamo**: Robô Auxiliar para Tarefas Domésticas
 
-Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interação Humano-Robô (IHR) (CCR230) do curso de Engenharia de Robôs, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
+Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário FEI, como parte dos requisitos necessários para aprovação na disciplina de Interação Humano-Robô (IHR) (CCR230) do curso de Engenharia de Robôs, orientado pelo Prof. Dr. Fagner de Assis Moura Pimentel.
 
-## Componentes do Grupo
+### Componentes do Grupo
 
-- Nome Componente 1
-- Nome Componente 2
-- Nome Componente 3
+Nicolas Alan Grotti Meireles Aguiar RAL 11.120.562-1
 
-## Resumo
+### Resumo
 
-Apresente uma breve descrição do seu robô e sua aplicação (tarefa que ele irá resolver).
+O **Dinamo** é um robô auxiliar projetado para realizar tarefas domésticas básicas, como lavar louça, arrumar a cama e varrer o chão, em residências de um único andar. Controlado exclusivamente por um aplicativo, ele utiliza uma câmera estéreo, um manipulador de 6 graus de liberdade (DOF) e uma base diferencial para executar atividades de forma autônoma, aprendendo por demonstração humana.
 
-## Introdução
+### Introdução
 
-- Apresente uma contextualização para o problema que o seu robô irá resolver e por quê esse tipo de robô é necessário hoje na sociedade.
-- Apresente uma breve descrição do seu robô e sua aplicação (tarefa que ele irá resolver).
-- Em uma única frase, resuma o objetivo do seu robô.
-- Que tipo de experiência o robô deve proporcionar para os usuários?
+Tarefas domésticas repetitivas, como lavar louça, arrumar a cama e varrer o chão, consomem tempo valioso no dia a dia, apesar de seguirem padrões previsíveis. Em uma sociedade onde a otimização do tempo é cada vez mais valorizada, robôs como o **Dinamo** tornam-se essenciais para aliviar essas responsabilidades. O **Dinamo** é um robô compacto que realiza essas tarefas por meio de comandos via aplicativo, utilizando uma câmera estéreo e um manipulador de 6 DOF para operar de forma autônoma. Seu objetivo é automatizar atividades rotineiras, permitindo que os usuários foquem em prioridades pessoais ou profissionais. A experiência proporcionada pelo **Dinamo** é de praticidade, autonomia e surpresa, com um robô que aprende e se adapta às preferências do usuário.
 
-## Publico Alvo
+### Público Alvo
 
-- Determine o seu público alvo:
+Perfil de usuário: Indivíduos entre 20 e 35 anos, com renda média, conhecimento em tecnologia, que vivem sozinhos ou com no maximo um companheiro.
 
 ### Personas
 
-- Descreva as personas que irão interagir com o robô. Deixe claro suas principais caracteristicas e contextos sociais, econômicos e culturais.
-- Quais informações sobre o usuário o robô deve saber antes de iniciar a tarefa?
+Persona primária: João, 28 anos, engenheiro de software, mora sozinho em um apartamento. Valoriza a praticidade e busca otimizar seu tempo livre para hobbies ou trabalho.
+Informações que o robô deve saber: Horários disponíveis de João, localização da pia, cama e áreas a varrer, além de suas preferências (ex.: como arrumar a cama).
 
-  - Persona primaira ...
-  - Persona secundária ...
-  - Outras personas ...
+Persona secundária: Maria, 25 anos, designer, visita amigos que possuem o **Dinamo**. Curiosa sobre tecnologia, mas sem experiência prévia com robôs.
+Informações que o robô deve saber: Nenhuma informação prévia, já que Maria não é a dona do robô; ele deve operar normalmente na presença dela.
 
-### Mapa de empatia
+### Mapa de Empatia
 
-![Mapa de empatia](empatia.png)
+#### Persona primária (João):
 
-- Determine o mapa de empatia[^1] de pelo menos uma persona primária e uma sercundária.
-  - O que o usuário vê: aqui estamos falando do ambiente visual em que o usuário se encontra. Ou seja, o que ele efetivamente enxerga, as pessoas e objetos que estão ao seu redor. Isso ajuda a entender o contexto em que o usuário está inserido e as influências visuais que está recebendo.
-  - O que o usuário ouve: neste quadrante, buscamos entender o que o usuário está ouvindo, os sons que o cercam e como eles influenciam suas ações.
-  - O que o usuário diz e faz: aqui consideramos ações e comportamentos que o usuário apresenta durante sua interação com o robô.
-  - O que o usuário pensa e sente: neste quadrante, buscamos entender os pensamentos, sentimentos, emoções e percepções que o usuário tem em relação robô. Quais expectativas o usuário cria sobre o robô?
-  Que tipo de robô mais agrada essa persona?
-  - Dores: quando falamos sobre dores do usuário, estamos fazendo referência a quaisquer obstáculos, necessidades ou frustrações que o usuário possa experimentar ao tentar realizar uma tarefa ou alcançar um objetivo. Isso inclui, por exemplo, problemas de usabilidade, dificuldades de acesso ou outros desafios que podem afetar a experiência do usuário.
-  - Ganhos: nesse caso estamos falando de quaisquer benefícios ou recompensas que o usuário possa experimentar ao utilizar o robô. Isso pode incluir economia de tempo ou facilidade de uso, por exemplo. Que desejos do usuário o robô satisfaz?
+**O que vê**: Um apartamento organizado, soluções tecnológicas minimalistas e modernas.
+**O que ouve**: Recomendações de amigos sobre gadgets e tecnologias úteis.
+**O que diz e faz**: Busca dispositivos que economizem tempo e compartilha suas experiências em redes sociais.
+**O que pensa e sente**: Valoriza praticidade e eficiência; sente satisfação com tecnologias que se adaptam a ele.
+**Dores**: Frustração com dispositivos complexos ou que não atendem suas expectativas.
+**Ganhos**: Tempo livre, qualidade de vida e surpresa ao ver o robô aprender suas preferências.
 
-## Contexto de uso
 
-- Descreva o ambiente em que o robô interage com os usuários
-- Qual/quais o(s) contexto(s) sociais, econômicos e culturais existentes neste ambiente?
-- Quais informações sobre o ambiente o robô deve saber antes de iniciar a tarefa?
+#### Persona secundária (Maria):
 
-## Jornada do usuário
+**O que vê**: O **Dinamo** funcionando na casa de amigos, ambientes limpos e organizados.
+**O que ouve**: Comentários positivos dos amigos sobre o robô.
+**O que diz e faz**: Expressa curiosidade e observa o robô em ação.
+**O que pensa e sente**: Interesse em tecnologia, mas receio de não entender seu funcionamento.
+**Dores**: Insegurança por falta de familiaridade com robôs.
+**Ganhos**: Fascínio ao ver o robô operar autonomamente.
 
-- Criar uma narrativa para o o seu robô e o usuário.
-- Determine o passo a passo que o usuário realiza desde o primeiro até o último encontro com robô na realização da tarefa.
-- O que está acontecendo com o ambiente quando o robô está interagindo com o usuário?
-  - Descreva o que acontece ou pode acontecer passo a passo
-  - Como a tarefa começa? Como a tarefa evolui? Como a tarefa termina?
-- Enfatize todos os momentos em que acontece uma interação verbal, não-verbal e espacial.
 
-## Análise de concorrência
+### Contexto de Uso
 
-- Pesquise robôs existentes atualmente que possam fazer a tarefa deste projeto.
-- Selecione pelo menos 3 robôs diferentes que podem fazer essa tarefa.
-- Em relação aos concorrentes, respondam as seguintes perguntas?
-  - Existe plataforma similar que atende o mesmo mercado e funcionalidades? Se sim: Quais os pontos positivos? Quais os pontos negativos?
-  - Existe plataforma diferente quanto ao serviço, mas que atenda esse mercado? Se sim: Quais os pontos positivos? Quais os pontos negativos?
-  - Quais plataformas sua equipe acha mais interessantes? Qual a justificativa?
+O **Dinamo** opera em residências de um único andar, como apartamentos ou casas pequenas, sem adaptação para escadas ou elevadores. O ambiente é caracterizado por espaços reduzidos, exigindo um robô pequeno, portátil e capaz de navegar entre diferentes pisos. Socialmente, atende a jovens adultos com estilo de vida moderno; economicamente, é voltado para quem tem renda média e investe em tecnologia; culturalmente, reflete a valorização da praticidade e inovação. O robô deve conhecer a disposição do ambiente (pia, cama, áreas a varrer) e os horários dos usuários antes de iniciar as tarefas.
 
-## Design
+#### Jornada do Usuário
 
-- Pense nas características de Affordances do seu robô. Que tipo de acessibilidades devem ser consideradas dentro do seu projeto?
-- Discuta o papel das expectativas do usuário no projeto de um robô. Qual a importância e pontos a serem considerados se você quiser vender esse robô  seu robô?
-- O seu robô tem um padrão com mais ou menos características antropomórficas? Qual padrão é mais aceito pela sociedade dentro do projeto que você está desenvolvendo?
-- Quais o design mais apropriado para o robô deste projeto? Modele o seu robô com desenhos de formas primitivas (caixas, cilindros, esferas)
+**Narrativa**: João agenda no aplicativo para o **Dinamo** lavar a louça às 18h. Ele sai para trabalhar, e o robô executa a tarefa autonomamente, notificando João ao finalizar.
 
-<!-- ![Partes do robô](partes_do_robo.png) -->
-<!-- ![Robô](robo.png) -->
-<img alt="Partes do robô" src="partes_do_robo.png" height="200"/>
-<img alt="Robô" src="robo.png" height="200"/>
+**Passo a passo**:
+- João abre o aplicativo e agenda "lavar louça às 18h".
+- Às 18h, o **Dinamo** se desloca até a pia, usa sua câmera estéreo para identificar louças e as lava com o manipulador.
+- Após concluir, o robô envia uma notificação ao aplicativo: "Louça lavada".
 
-## Ações do robô
 
-- Para cada ação:
-  - Descreva a ação.
-  - Determine os pré-requisitos para que a ação aconteça
-  - Determine o que se espera que seja modificado no ambiente quando a ação é finalizada
+**Ambiente**: O apartamento permanece silencioso, com a pia ficando limpa e organizada.
+**Interações**:
+- **Espacial**: O robô se move até a pia (início) e retorna à base (fim).
+- **Não-verbal**: Notificação do aplicativo ao iniciar e finalizar a tarefa.
+- **Verbal**: Nenhuma, pois não há interface de voz.
 
-## Interações do robô
 
-### Espacial
+### Análise de Concorrência
 
-- Para cada interação:
-  - Descreva a interação.
-  - Determine os pré-requisitos para que a interação aconteça
-  - Determine espera de resposta emocional do usúario quando a interação é finalizada
+**Tesla – Optimus**:
+Similaridade: Robô para tarefas repetitivas com aprendizado por imitação.
+Pontos positivos: Versatilidade em ambientes industriais e domésticos.
+Pontos negativos: Preço elevado (US$20.000–30.000) e complexidade excessiva para tarefas simples.
+
+
+**Figure**:
+**Similaridade**: Robô humanoide para uso doméstico e industrial.
+**Pontos positivos**: IA avançada (Helix) e parcerias como com a BMW.
+**Pontos negativos**: Foco maior em indústria, menos acessível para residências.
+
+
+**Hello Robot – Stretch**:
+**Similaridade**: Robô compacto para tarefas domésticas.
+**Pontos positivos**: Design acessível, open source, custo razoável (US$24.950).
+**Pontos negativos**: Menor autonomia e funcionalidades limitadas.
+
+
+**Preferência da equipe**: Stretch, por seu foco em acessibilidade e simplicidade, alinhado ao público do **Dinamo**.
+
+### Design
+
+O **Dinamo** é construído com materiais plásticos de baixa rigidez, garantindo segurança ao evitar lesões em caso de contato acidental com o usuário. Seu design utiliza formas geométricas simples, incluindo uma pinça funcional, rodas para mobilidade e um torso básico, projetado com o objetivo principal de oferecer extensibilidade para manipulação de objetos e compacidade para navegação eficiente em ambientes domésticos. O robô apresenta características antropomórficas mínimas, priorizando a funcionalidade para atender às necessidades práticas do usuário. A expectativa do usuário é um robô proativo, eficiente e discreto, que execute tarefas básicas de forma autônoma, integrando-se ao cotidiano sem demandar atenção ou interação constante.
+
+<img alt="Robô" src="imagens/robo_completo.png" height="200"/>
+
+### Ações do Robô
+
+**Lavar louça**:
+- Descrição: Lava pratos e talheres na pia.
+- Pré-requisitos: Acesso à pia e louças sujas.
+- Resultado: Louças limpas e organizadas.
+
+
+**Arrumar a cama**:
+- Descrição: Organiza lençóis e travesseiros.
+- Pré-requisitos: Acesso ao quarto e cama desarrumada.
+- Resultado: Cama arrumada.
+
+
+**Varrer o chão**:
+- Descrição: Remove sujeira do piso.
+- Pré-requisitos: Acesso ao ambiente e chão sujo.
+- Resultado: Piso limpo.
+
+
+
+### Interações do Robô
+**Espacial**
+
+**Movimentação**:
+- Descrição: Desloca-se pelo ambiente, evitando obstáculos.
+- Pré-requisitos: Espaço livre e mapeamento prévio.
+- Resposta emocional: Confiança na autonomia do robô.
+
+
 
 ### Verbal
 
-- Para cada interação:
-  - Descreva a interação.
-  - Determine os pré-requisitos para que a interação aconteça
-  - Determine espera de resposta emocional do usúario quando a interação é finalizada
+Não aplicável, pois o **Dinamo** não possui interface de voz.
 
 ### Não-verbal
 
-- Para cada interação:
-  - Descreva a interação.
-  - Determine os pré-requisitos para que a interação aconteça
-  - Determine espera de resposta emocional do usúario quando a interação é finalizada
-
-[^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
-
-<!-- TODOs:
-- Add exemplos
- -->
+**Gestos**:
+- Descrição: Uma luz na cabeça do robô acende para sinalizar o início ou a conclusão de uma tarefa.
+- Pré-requisitos: Tarefa agendada ou concluída.
+- Resposta emocional: Surpresa e satisfação com a interação.
