@@ -12,9 +12,7 @@ RUN pip install --no-cache-dir \
     git+https://github.com/openai/whisper.git \
     torch \
     torchvision \
-    torchaudio \
-    gTTS \
-    python-vlc
+    torchaudio
 
 WORKDIR /app
 

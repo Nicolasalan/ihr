@@ -14,7 +14,7 @@
   <link name="base_link">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
-      <mass value="10.0" />
+      <mass value="15.0" />
       <inertia ixx="0.0646" ixy="0" ixz="0" iyy="0.0646" iyz="0" izz="0.1125" />
     </inertial>
     <visual>
@@ -35,7 +35,7 @@
   <!-- link: coluna -->
   <link name="coluna">
     <inertial>
-      <mass value="0.5" />
+      <mass value="0.2" />
       <inertia
                 ixx="0.020529"
                 ixy="0"
@@ -71,7 +71,7 @@
   <!-- link: torso -->
   <link name="torso">
     <inertial>
-      <mass value="0.8" />
+      <mass value="0.2" />
       <inertia
                 ixx="0.002167"
                 ixy="0"
@@ -141,7 +141,7 @@
   <!-- link: ombro_esquerdo -->
   <link name="ombro_esquerdo">
     <inertial>
-      <mass value="0.1" />
+      <mass value="0.05" />
       <inertia
                 ixx="0.000672"
                 ixy="0"
@@ -214,7 +214,7 @@
   <!-- link: ombro_direito -->
   <link name="ombro_direito">
     <inertial>
-      <mass value="0.1" />
+      <mass value="0.05" />
       <inertia
                 ixx="0.000672"
                 ixy="0"
@@ -252,7 +252,7 @@
   <!-- link: cotovelo_esquerdo -->
   <link name="cotovelo_esquerdo">
     <inertial>
-      <mass value="0.1" />
+      <mass value="0.05" />
       <inertia
                 ixx="0.000024"
                 ixy="0"
@@ -288,7 +288,7 @@
   <!-- link: antebraco_esquerdo -->
   <link name="antebraco_esquerdo">
     <inertial>
-      <mass value="0.2" />
+      <mass value="0.05" />
       <inertia
                 ixx="0.001570"
                 ixy="0"
@@ -362,7 +362,7 @@
   <!-- link: cotovelo_direito -->
   <link name="cotovelo_direito">
     <inertial>
-      <mass value="0.1" />
+      <mass value="0.05" />
       <inertia
                 ixx="0.000024"
                 ixy="0"
@@ -398,7 +398,7 @@
   <!-- link: antebraco_direito -->
   <link name="antebraco_direito">
     <inertial>
-      <mass value="0.2" />
+      <mass value="0.05" />
       <inertia
                 ixx="0.001570"
                 ixy="0"
@@ -466,6 +466,150 @@
     <origin xyz="0 0 -0.25" rpy="0 0 0" />
     <parent link="antebraco_direito" />
     <child link="esfera_mao_direito" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- link: roda_frente -->
+  <link name="roda_frente">
+    <inertial>
+      <mass value="0.01" />
+      <inertia
+                ixx="0.000016"
+                ixy="0"
+                ixz="0"
+                iyy="0.000016"
+                iyz="0"
+                izz="0.000016"
+            />
+    </inertial>
+    <visual>
+      <material name="Green">
+        <color rgba="0 1 0 1" />
+      </material>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- joint: base_link -> roda_frente -->
+  <joint name="roda_frente_base_link" type="fixed">
+    <origin xyz="0.10 0.0 -0.02" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="roda_frente" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- link: roda_tras -->
+  <link name="roda_tras">
+    <inertial>
+      <mass value="0.01" />
+      <inertia
+                ixx="0.000016"
+                ixy="0"
+                ixz="0"
+                iyy="0.000016"
+                iyz="0"
+                izz="0.000016"
+            />
+    </inertial>
+    <visual>
+      <material name="Green">
+        <color rgba="0 1 0 1" />
+      </material>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- joint: base_link -> roda_tras -->
+  <joint name="roda_tras_base_link" type="fixed">
+    <origin xyz="-0.10 0.0 -0.02" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="roda_tras" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- link: roda_esquerda -->
+  <link name="roda_esquerda">
+    <inertial>
+      <mass value="0.01" />
+      <inertia
+                ixx="0.000016"
+                ixy="0"
+                ixz="0"
+                iyy="0.000016"
+                iyz="0"
+                izz="0.000016"
+            />
+    </inertial>
+    <visual>
+      <material name="Green">
+        <color rgba="0 1 0 1" />
+      </material>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- joint: base_link -> roda_esquerda -->
+  <joint name="roda_esquerda_base_link" type="fixed">
+    <origin xyz="0.0 0.10 -0.02" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="roda_esquerda" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <!-- link: roda_direita -->
+  <link name="roda_direita">
+    <inertial>
+      <mass value="0.01" />
+      <inertia
+                ixx="0.000016"
+                ixy="0"
+                ixz="0"
+                iyy="0.000016"
+                iyz="0"
+                izz="0.000016"
+            />
+    </inertial>
+    <visual>
+      <material name="Green">
+        <color rgba="0 1 0 1" />
+      </material>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.02" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- joint: base_link -> roda_direita -->
+  <joint name="roda_direita_base_link" type="fixed">
+    <origin xyz="0.0 -0.10 -0.02" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="roda_direita" />
     <axis xyz="0 1 0" />
   </joint>
 
@@ -603,7 +747,7 @@
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <odometryRate>20.0</odometryRate>
-      <robotBaseFrame>base_footprint</robotBaseFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>
 

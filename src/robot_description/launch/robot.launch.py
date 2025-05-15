@@ -47,9 +47,9 @@ def generate_launch_description():
         executable='teleop_twist_keyboard',
         output='log',
         prefix=["xterm -hold -e"],
-        remappings=[
-            ('/cmd_vel', '/demo/cmd_vel'),
-        ]
+        # remappings=[
+        #     ('/cmd_vel', '/demo/cmd_vel'),
+        # ]
     )
 
     spawn_entity = Node(
