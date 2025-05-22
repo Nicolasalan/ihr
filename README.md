@@ -151,3 +151,8 @@ Não aplicável, pois o **Dinamo** não possui interface de voz.
 ### Não-verbal
 
 - Notificação do aplicativo ao iniciar e finalizar a tarefa.
+
+
+### Link apresentação
+
+https://gamma.app/docs/Dinamo-Robo-assistente-domestico--9440q4zynrnvd8i?mode=present#card-myq1rzgs8z5prjc
